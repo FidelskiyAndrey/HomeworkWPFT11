@@ -1,0 +1,30 @@
+﻿<Window x:Class="HomeworkWPFT11.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HomeworkWPFT11"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+
+
+    <Grid>
+        <Path Fill="Red" Stroke="Black">
+            <Path.Data >
+                <EllipseGeometry Center="215,145" RadiusX="80" RadiusY="80"/>
+            </Path.Data>
+        </Path>
+        <Path Fill="White" Stroke="Black">
+            <Path.Data>
+                <PathGeometry>
+                    <PathFigure IsClosed="True" StartPoint="200,200">
+                        <ArcSegment Point="250,100" Size="57,57"/>
+                    </PathFigure>
+                    <PathFigure IsClosed="True" StartPoint="180,190">
+                        <ArcSegment Point="230,90" Size="57,57" SweepDirection="Clockwise"/>
+                    </PathFigure>
+                </PathGeometry>
+            </Path.Data>
+        </Path>
+    </Grid>
+</Window>
